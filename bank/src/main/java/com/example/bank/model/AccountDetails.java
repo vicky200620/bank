@@ -17,9 +17,7 @@ public class AccountDetails {
 	private String mobileNumber;
 	private String email;
 	private long monthlyAverageBalance;
-	public String getAccountID() {
-		return accountID;
-	}
+	
 	public AccountDetails(String accountID, String customerName, int pan, Date dateOfBirth, String accountType,
 			String accountState, long accountBalance, String mobileNumber, String email, long monthlyAverageBalance) {
 		super();
@@ -33,6 +31,10 @@ public class AccountDetails {
 		this.mobileNumber = mobileNumber;
 		this.email = email;
 		this.monthlyAverageBalance = monthlyAverageBalance;
+	}
+	
+	public String getAccountID() {
+		return accountID;
 	}
 	public void setAccountID(String accountID) {
 		this.accountID = accountID;
